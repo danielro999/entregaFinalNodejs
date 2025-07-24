@@ -140,7 +140,6 @@ npm run dev
 
 ```json
   {
-    "id": "DofZQhu8xm5BMhuhbE11",
     "categoria": [
       "hogar",
       "climatizacion"
