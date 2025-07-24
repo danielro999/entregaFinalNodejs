@@ -67,7 +67,7 @@ export const updarteProduct = async (id, product) => {
   try {
     const productRef = doc(productsCollection, id);
     const productDoc = await getDoc(productRef);
-    if (productDoc.exists) {
+    if (productDoc.exists()) {
       await setDoc(productRef, product);
       return { id, ...product };
     } else {
