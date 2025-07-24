@@ -28,8 +28,8 @@ Luego editar el archivo `.env` con los valores correspondientes para tu entorno.
 npm run dev
 ```
 
-5. Para los metodos POST, PUT, DELETE es necesario loguearse para obtner el token.
-   El metodo GET no necesita al autorizacion
+5. Para los metodos POST, PUT, DELETE es necesario loguearse para obtener el token.
+   El metodo GET no necesita autorizacion.
 
 ## Documentación de la API
 
