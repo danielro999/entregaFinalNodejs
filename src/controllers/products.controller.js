@@ -7,8 +7,11 @@ export const getAllProducts = async (req, res)=>{
 
 export const getProductById = async (req, res)=> {
     const productId = req.params.id;
-    //const {id} = req.params;
-    res.json(await productsServices.getProductById(productId))
+    const product = await productsServices.getProductById(productId)
+    if(!product){
+        return res.status(404).json({ error: "no existe recurso"});
+    }
+    res.json(product)
 }
 
 export const createProduct = async (req, res)=>{
